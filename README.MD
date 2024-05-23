@@ -40,12 +40,12 @@ The MRC File Conversion Toolkit offers a comprehensive set of tools for working 
 #### Phase 1: Foundation and Core Functionality
 
 1. **Module Setup and Project Structure**
-   - [x] Set up the project repository with the appropriate directory structure and configuration files.
-   - [x] Initialize separate crates for header parsing, image processing, conversion, visualization, analysis, and utilities.
+   - [ ] Set up the project repository with the appropriate directory structure and configuration files.
+   - [ ] Initialize separate crates for header parsing, image processing, conversion, visualization, analysis, and utilities.
 
 2. **Header Parsing Module**
-   - [x] Implement the `parse_mrc_header` function to extract metadata from MRC file headers.
-   - [x] Define the `MrcHeader` struct to represent parsed header data.
+   - [ ] Implement the `parse_mrc_header` function to extract metadata from MRC file headers.
+   - [ ] Define the `MrcHeader` struct to represent parsed header data.
 
 3. **Image Processing Module**
    - [ ] Develop basic image processing functionalities such as contrast adjustment and filtering.
