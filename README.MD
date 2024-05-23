@@ -35,26 +35,82 @@ The MRC File Conversion Toolkit offers a comprehensive set of tools for working 
    - **Implementation:** The `add_images_to_mrc_stack` function allows users to augment MRC stacks with new images, maintaining the integrity of the stack structure.
    - **Usage:** Useful for incrementally building datasets or incorporating new acquisitions into existing image collections.
 
-#### Roadmap
+### Roadmap for MRC File Conversion Toolkit
 
-1. **Enhanced Visualization Features**
-   - Implement advanced visualization tools such as interactive pan, zoom, and region-of-interest selection for immersive exploration of MRC images.
+#### Phase 1: Foundation and Core Functionality
 
-2. **Image Annotation and Marking**
-   - Introduce image annotation capabilities to allow users to mark regions of interest directly on MRC images for collaboration and documentation.
+1. **Module Setup and Project Structure**
+   - [x] Set up the project repository with the appropriate directory structure and configuration files.
+   - [x] Initialize separate crates for header parsing, image processing, conversion, visualization, analysis, and utilities.
 
-3. **Quantitative Analysis Tools**
-   - Develop quantitative analysis tools for measuring features, extracting morphological parameters, and conducting statistical analysis on MRC image data.
+2. **Header Parsing Module**
+   - [x] Implement the `parse_mrc_header` function to extract metadata from MRC file headers.
+   - [x] Define the `MrcHeader` struct to represent parsed header data.
 
-4. **Machine Learning Integration**
-   - Integrate machine learning algorithms for tasks such as image segmentation, classification, and feature extraction to enable advanced analysis of MRC images.
+3. **Image Processing Module**
+   - [ ] Develop basic image processing functionalities such as contrast adjustment and filtering.
+   - [ ] Implement unit tests to ensure correctness of image processing algorithms.
 
-5. **Cloud-Based Processing and Collaboration**
-   - Implement cloud-based processing and collaboration features for sharing data, collaborating on analyses, and leveraging cloud computing resources for scalable research.
+4. **Conversion Module**
+   - [ ] Create functions for converting MRC files to other image formats (e.g., PNG, JPEG).
+   - [ ] Integrate third-party libraries or crates for handling image format conversions.
 
-6. **Documentation and Community Engagement**
-   - Enhance documentation and provide comprehensive support resources, including tutorials, examples, and user forums, to facilitate adoption and collaboration within the user community.
+#### Phase 2: Enhanced Features and Performance Optimization
+
+5. **Quantitative Analysis Module**
+   - [ ] Develop algorithms for quantitative analysis, feature extraction, and statistical analysis of MRC image data.
+   - [ ] Integrate with the image processing module to extract relevant features.
+
+6. **Concurrency and Parallelism**
+   - [ ] Implement asynchronous processing using Rust's async/await syntax and tokio runtime.
+   - [ ] Utilize parallel processing techniques with Rayon or similar libraries to improve performance.
+
+7. **Error Handling and Resilience**
+   - [ ] Enhance error handling mechanisms with custom error types and descriptive error messages.
+   - [ ] Implement defensive programming techniques to handle edge cases and unexpected inputs.
+
+#### Phase 3: Usability and User Experience Improvements
+
+8. **Graphical User Interface (GUI)**
+   - [ ] Design and implement a graphical user interface (GUI) using GTK, Qt, or web-based technologies like WebAssembly (WASM).
+   - [ ] Enable advanced visualization features and intuitive interaction capabilities.
+
+9. **Documentation and Testing**
+   - [ ] Provide comprehensive documentation using Rustdoc to describe module functionalities, usage examples, and API references.
+   - [ ] Write extensive unit tests for each module to ensure correctness and reliability.
+
+10. **Community Engagement and Contribution**
+    - [ ] Foster an open-source community around the toolkit through GitHub repository management, issue tracking, and pull request reviews.
+    - [ ] Organize community events such as hackathons, workshops, and meetups to encourage collaboration and knowledge sharing.
+
+#### Phase 4: Advanced Features and Integration
+
+11. **Machine Learning Integration**
+    - [ ] Integrate machine learning algorithms for tasks such as image segmentation, classification, and feature extraction.
+    - [ ] Explore pre-trained models and libraries like TensorFlow or PyTorch for image analysis tasks.
+
+12. **Cloud-Based Processing and Collaboration**
+    - [ ] Implement cloud-based processing and collaboration features for sharing data, conducting analyses, and leveraging cloud computing resources.
+    - [ ] Integrate with cloud platforms like AWS, Google Cloud, or Microsoft Azure for scalable processing and storage.
+
+13. **Plugin System and Extensibility**
+    - [ ] Design and implement a plugin system or extension mechanism to allow third-party developers to extend the toolkit's functionality.
+    - [ ] Define clear APIs and guidelines for developing and integrating custom plugins and modules.
+
+#### Phase 5: Deployment and Maintenance
+
+14. **Continuous Integration and Deployment (CI/CD)**
+    - [ ] Set up CI/CD pipelines using tools like GitHub Actions or Travis CI for automated testing, building, and deployment.
+    - [ ] Ensure backward compatibility and version management through semantic versioning principles.
+
+15. **User Feedback and Iterative Improvement**
+    - [ ] Solicit feedback from users and stakeholders through surveys, user interviews, and usability testing sessions.
+    - [ ] Iterate on the toolkit based on user feedback and feature requests to address usability issues and enhance user experience.
+
+16. **Documentation Updates and Maintenance**
+    - [ ] Regularly update documentation and tutorials to reflect changes and new features in the toolkit.
+    - [ ] Provide timely support and assistance to users through documentation updates and community forums.
 
 #### Conclusion
 
-The MRC File Conversion Toolkit provides a powerful suite of tools for working with MRC image files, catering to the diverse needs of researchers, clinicians, and developers in the biomedical imaging domain. Through continuous development and community engagement, the toolkit aims to empower users with advanced capabilities for analyzing, visualizing, and sharing MRC image data, ultimately driving innovation and advancement in biomedical research and healthcare.
+The roadmap provides a clear outline of the planned phases, current state, and future actions for the development of the MRC File Conversion Toolkit. Each phase represents a set of goals and tasks aimed at building a robust, feature-rich, and user-friendly toolkit for working with MRC image files. Regular updates and adjustments will be made based on feedback and evolving requirements to ensure the success of the project.
