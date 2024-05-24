@@ -7,8 +7,9 @@
     byteorder = "1.4.3"
     clap = { version = "4.0", features = ["derive"] }
 ```
+
 - byteorder for reading binary data with a specific endianness.
-- clap for parsing command-line arguments.  
+- clap for parsing command-line arguments.
 
 Add these to your Cargo.toml as shown above.
 
