@@ -1,0 +1,1 @@
+fn auto_contrast(file_path: &str) -> io::Result<Self> {}

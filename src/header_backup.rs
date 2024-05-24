@@ -130,7 +130,7 @@ impl MRCHeader {
         for i in 0..10 {
             let mut label_bytes = [0; 80];
             file.read_exact(&mut label_bytes)?;
-            header.labels[i] = String::from_utf8_lossy(&label_bytes).trim_end_matches('\0').into_owned();
+            header.labels[i] = String::from_utf8_lossy(&label_bytes).trim_end_matches('\0').to_owned();
         }
 
         Ok(header)
