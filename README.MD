@@ -2,7 +2,7 @@
 
 #### Introduction
 
-The MRC File Conversion Toolkit offers a comprehensive set of tools for working with MRC (Medical Research Council) image files. This document presents an overview of the toolkit's capabilities, including reading MRC file headers, interactive visualization, image conversion, quantitative analysis, and more. Additionally, it outlines a roadmap for future enhancements and developments to further enrich the toolkit's functionality.
+The MRC File Conversion Toolkit offers a comprehensive set of tools for working with MRC image files. This document presents an overview of the toolkit's capabilities, including reading MRC file headers, interactive visualization, image conversion, quantitative analysis, and more.
 
 #### Functionality Overview
 
@@ -47,12 +47,12 @@ The MRC File Conversion Toolkit offers a comprehensive set of tools for working 
 
 1. **Module Setup and Project Structure**
 
-   - [ ] Set up the project repository with the appropriate directory structure and configuration files.
-   - [ ] Initialize separate crates for header parsing, image processing, conversion, visualization, analysis, and utilities.
+   - [x] Set up the project repository with the appropriate directory structure and configuration files.
+   - [x] Initialize separate crates for header parsing, image processing, conversion, visualization, analysis, and utilities.
 
 2. **Header Parsing Module**
 
-   - [ ] Implement the `parse_mrc_header` function to extract metadata from MRC file headers.
+   - [x] Implement the `parse_mrc_header` function to extract metadata from MRC file headers.
    - [ ] Define the `MrcHeader` struct to represent parsed header data.
 
 3. **Image Processing Module**
